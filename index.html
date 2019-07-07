@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+    <style>
+        /* following two viewport lines are equivalent to meta viewport statement above, needed for Windows */
+        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }  @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }           @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+    </style>
+        <title>FoodChef</title>
+        <link href ="style.css" type="text/css" rel="stylesheet">
+        <link href="./mediaquery.css" type="text/css" rel ="stylesheet">
+    </head>
+    <body>
+            <header>
+                <div id="home">
+
+                    <div id="logo">
+                        <img src ="./icons/FoodChef Logo.svg" width="200px"/>
+                    </div>
+                    <div id="nav">
+                        <div id=nav-menucon>
+                            <div id="nav-menu">
+                                <img src="./icons/baseline_menu_white_18dp.png"/>
+                            </div>
+                        </div> 
+                        <nav >
+                            <a href="#" class ="nav-item">HOME</a>
+                            <a href="#" class ="nav-item">ABOUT</a>
+                            <a href="#" class ="nav-item">SERVICES</a>
+                            <a href="#" class ="nav-item">TEAM</a>
+                            <a href="#" class ="nav-item">OUR FOOD</a>
+                            <a href="#" class ="nav-item">TESTIMONIALS</a>
+                            <a href="#" class ="nav-item">CONTACT</a>
+
+                        </nav>
+                    </div>
+                 </div>
+                 <section id="hmain">
+                         
+                        <div id="learn">
+                                <div id="prev">
+                                    <img src="./images/prev.png">
+                                </div>
+                                <div id="greeting">
+                            
+                                        <h1 class="greetings">WELCOME TO OUR </h1> 
+                                        <h1 class="greetings">RESTAURANT</h1>
+                                        <p class ="greetings">Lorem Ipsum dolor sit </p>
+                                </div>    
+                                <div id="learncon" >
+                                        <p>LEARN MORE</p>
+                                        <img id="stroke" src="./icons/Stroke.svg">
+                               </div>
+                               
+                                <div id="next">
+                                     <img src="./images/next.png">
+                                </div>
+                            </div>
+                            <div id="nav-icon">
+                                    <img width="50px" height="50px" style ="display:block;" src="./icons/Component.svg"/>
+                        </div>
+                        
+                        
+                        <div id="current-icons">
+                            <div class="current" style="background-color:red; border:solid 2px red;"></div>
+                            <div class="current"></div>
+                            <div class="current"></div>
+                               
+                                
+                        </div>
+
+                 </section>
+            </header>
+       
+        <main>
+             <!-- About section below-->
+            <section >
+                    <h1>About Us</h1>
+                    <div id="about-intro">
+                       <h3 style="color:rgb(137, 240, 77);">About our Restaurant food</h2>
+                       <p>Lorem ipsum dollor sit proin elit metus. dapibus ac orci vitae</p>
+                    </div>
+                    <div id="about-con">
+                             <div id="about-writeup" class="about-writeup">
+                                 <h1>LOREMIPSUM DOLOR</h1>
+                                 <h1>SITAMET</h1>
+                                 <p>Lorem ipsum dolor sit arnet consectetur adipiscing elit. Maecenas cursu ligula quismales uada placerat</p>   
+                             </div> 
+                             <div class="aimage">
+                                 <img src="images/about1.jpg" id="aimage1">
+                             </div>
+                             <div id="about-writeup1" class="about-writeup">
+                                 <h1>LOREMIPSUM DOLOR</h1>
+                                 <h1>SITAMET</h1>
+                                 <p>Lorem ipsum dolor sit arnet consectetur adipiscing elit. Maecenas cursu ligula quismales uada placerat</p>   
+                             </div>
+                             <div class="aimage">
+                                 <img src="images/about2.jpg">
+                             </div>
+                             <div id="about-writeup2" class="about-writeup">
+                                 <h1>LOREMIPSUM DOLOR</h1> 
+                                 <h1>SITAMET</h1>
+                                 <p>Lorem ipsum dolor sit arnet consectetur adipiscing elit. Maecenas cursu ligula quismales uada placerat</p>   
+                              </div>
+                              <div class="aimage">
+                                  <img src="images/about3.jpg">
+                              </div>
+                        
+                    </div>
+                </section>
+            <!--Team section below -->
+                <section class="team-cont">
+                        <h1>Team</h1>
+                        <div id="team-con">
+                          <div class="teamM">
+                              <img src="./images/team1.jpg" alt="">
+                              <h1>James Roy</h1>
+                              <p>Fusce eu semper lacus sodales id elit a. feugiat portuito nulla lacinia</p>
+                          </div>  
+                          <div class="teamM">
+                                <img src="./images/team2.jpg" alt="">
+                                <h1>John Doel</h1>
+                                <p>Fusce eu semper lacus sodales id elit a. feugiat portuito nulla lacinia</p>
+                          </div> 
+                          <div class="teamM">
+                                <img src="./images/team3.jpg" alt="">
+                                <h1>Edward Cren</h1>
+                                <p>Fusce eu semper lacus sodales id elit a. feugiat portuito nulla lacinia</p>
+                          </div>  
+                          <div class="teamM">
+                                    <img src="./images/team4.jpg" alt="">
+                                    <h1>Lisaen Eddy</h1>
+                                    <p>Fusce eu semper lacus sodales id elit a. feugiat portuito nulla lacinia</p>
+                          </div>  
+            
+                    </div>
+                 </section>
+
+            
+        </main>
+        <footer></footer>
+    </body>
+</html>
+
